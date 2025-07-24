@@ -80,3 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+<script>
+  const password = prompt("Enter password to view this site:");
+  if(password !== "Azam") {
+    alert("Wrong password!");
+    window.location.href = "https://example.com"; // or close tab
+  }
+</script>

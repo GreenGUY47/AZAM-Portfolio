@@ -1,4 +1,3 @@
-
 // index.js
 document.addEventListener("DOMContentLoaded", function () {
   const toggleBtn = document.querySelector('.toggle-mode');
@@ -7,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle('dark-mode');
   });
 });
+// index.js
 
 document.addEventListener('DOMContentLoaded', () => {
   // Hero Text Animation

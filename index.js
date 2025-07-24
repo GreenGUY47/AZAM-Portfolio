@@ -1,3 +1,11 @@
+// 🔐 Password Protection
+const password = prompt("Enter password to view this site:");
+if (password !== "azam123") {
+  alert("Wrong password!");
+  window.location.href = "https://google.com"; // ❗ Change redirect if needed
+  throw new Error("Access Denied"); // Stop the rest of the JS
+}
+
 // index.js
 document.addEventListener("DOMContentLoaded", function () {
   const toggleBtn = document.querySelector('.toggle-mode');
@@ -6,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle('dark-mode');
   });
 });
-// index.js
 
 document.addEventListener('DOMContentLoaded', () => {
   // Hero Text Animation
@@ -80,10 +87,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-<script>
-  const password = prompt("Enter password to view this site:");
-  if(password !== "Azam") {
-    alert("Wrong password!");
-    window.location.href = "https://example.com"; // or close tab
-  }
-</script>

@@ -1,0 +1,154 @@
+/* 📱 Universal Responsive Styles */
+
+/* ✅ Make all sections responsive */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ✅ Navbar responsive */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.navbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar .btn {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .btn {
+    align-self: flex-start;
+  }
+}
+
+/* ✅ Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ✅ Services */
+.services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flip-card, .Motion {
+  flex: 1 1 280px;
+  min-width: 250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+/* ✅ About Section */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-text {
+  margin-bottom: 30px;
+}
+
+.wave-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* ✅ Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+.footer img {
+  margin: 10px auto;
+  display: block;
+}
+
+/* ✅ Button General */
+.btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn.hire {
+  background-color: #555;
+}
+
+.btn.primary {
+  background-color: #007bff;
+}
+
+/* ✅ Highlight Text */
+.highlight {
+  color: #007bff;
+  font-weight: bold;
+}

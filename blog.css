@@ -1,0 +1,164 @@
+/* Reset & Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f6f6f6;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar nav a {
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.navbar nav a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -4px;
+  background-color: #000000;
+  transition: 0.3s ease;
+}
+
+.navbar nav a:hover::after,
+.navbar nav a.active::after {
+  width: 100%;
+}
+
+/* Blog Container */
+.blog-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.blog-container h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #002366;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.blog-container h1::after {
+  content: '';
+  display: block;
+  margin: 10px auto 0;
+  width: 60px;
+  height: 4px;
+  background-color: #ffc107;
+  border-radius: 2px;
+}
+
+/* Blog Card */
+.blog-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 35px;
+  border-left: 6px solid #002366;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card h2 {
+  margin-top: 0;
+  color: #002366;
+  font-size: 24px;
+}
+
+.blog-card p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.blog-card a {
+  color: #002366;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.blog-card a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px 15px;
+  background-color: #000000;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ac2424;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 99;
+  transition: 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #ff0000;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffce00;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}

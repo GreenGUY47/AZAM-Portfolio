@@ -1,198 +1,33 @@
-  /* ✅ Global Styles */
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #333;
-  }
-
-  /* ✅ Navbar */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background-color: #f5f5f5;
-    border-bottom: 2px solid #ddd;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-
-  .navbar .logo {
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .navbar nav a {
-    margin: 0 12px;
-    color: #222;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-
-  .navbar nav a:hover {
-    color: #ffc40000;
-  }
-
-  /* ✅ Button Style */
-  .btn {
-    background-color: #f7c524;
-    color: #000;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-
-  .btn:hover {
-    background-color: #ffffff;
-  }
-
-  /* ✅ Services Section */
-  .services {
-    padding: 60px 20px;
-    background: #f0f0f0;
-    text-align: center;
-  }
-
-  .services .section-title {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #222;
-  }
-
-  .services-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
-  .service-card {
-    background: #ffffff;
-    padding: 25px 20px;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    width: 280px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  }
-
-  .service-card img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-  }
-
-  .service-card h3 {
-    font-size: 22px;
-    color: #111;
-    margin-bottom: 10px;
-  }
-
-  .service-card p {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.6;
-  }
-
-  /* ✅ Call to Action */
-  .cta-section {
-    text-align: center;
-    padding: 60px 20px;
-    background: #273e2f;
-    color: white;
-  }
-
-  .cta-section h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-
-  .cta-section p {
-    font-size: 18px;
-    margin-bottom: 25px;
-  }
-
-  .hire-btn {
-    background-color: #f7c524;
-    color: black;
-    padding: 12px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-  }
-
-  .hire-btn:hover {
-    background-color: #ffffff;
-  }
-/* ✅ Navbar Updates */
-.navbar nav a {
-  position: relative;
-  margin: 0 12px;
-  color: #222;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+/* ✅ Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
 }
 
-.navbar nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0%;
-  height: 2px;
-  background-color: #f7c524;
-  transition: width 0.4s ease;
-}
-
-.navbar nav a:hover::after {
-  width: 100%;
-}
-
-.navbar nav a:hover {
-  color: #f7c524;
-  transform: translateY(-2px);
-}
-
-/* ✅ Footer Animation */
-footer {
+/* ✅ Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
   background-color: #f5f5f5;
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 14px;
-  color: #555;
-  border-top: 1px solid #ddd;
-  opacity: 0;
-  animation: footerFade 1s ease forwards;
-  animation-delay: 0.6s;
+  border-bottom: 2px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* ✅ Animations */
-@keyframes footerFade {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-/* ✅ Updated Navbar */
+
 .navbar nav a {
   position: relative;
   margin: 0 12px;
@@ -220,4 +55,152 @@ footer {
 .navbar nav a:hover {
   color: #000000;
   transform: translateY(-2px);
+}
+
+/* ✅ Button Style (Generic) */
+.btn {
+  background-color: #f7c524;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+}
+
+/* ✅ Contact Me Button */
+.contact-btn {
+  background-color: #f7c524;
+  color: #000;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Hire Me Button */
+.hire-btn {
+  background-color: #f7c524;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hire-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Services Section */
+.services {
+  padding: 60px 20px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.services .section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ✅ Call to Action Section */
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #273e2f;
+  color: white;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* ✅ Footer Styling */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  opacity: 0;
+  animation: footerFade 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* ✅ Animations */
+@keyframes footerFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

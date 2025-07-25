@@ -58,7 +58,7 @@ a {
 
 .navbar .btn {
   background: #ffc107;
-  color: #000000;
+  color: #ffffff;
   padding: 10px 20px;
   border-radius: 6px;
   font-weight: bold;
@@ -101,7 +101,7 @@ a {
 }
 
 .btn:hover {
-  background-color: #FF7F00;
+  background-color: #ffc400;
 }
 
 .btn.hire {

@@ -7,26 +7,9 @@
   <link rel="stylesheet" href="Hire.css" />
 </head>
 <body>
-  <input type="hidden" name="_next" value="your-thank-you-page-link">
-
-  <form action="https://formspree.io/f/mqalqbkr" method="POST">
-  <!-- Hidden fields -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <!-- You can add _next later if you want -->
-
-  <!-- Form Inputs -->
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <input type="text" name="subject" placeholder="Subject" />
-  <textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
-  <button type="submit" class="btn">Send Request</button>
-</form>
-
 
   <!-- 🔝 NAVBAR -->
   <header class="navbar">
-        <!-- <div class="logo"><img src="LOGO.png" alt="" width="50" height="50">M.AZAM</div> -->
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -34,13 +17,18 @@
             <a href="blog.html">Blog</a>
             <a href="hire-me.html" class="active">Contact</a>
         </nav>
-        <!-- <a href="hire-me.html" class="btn">Contact Me</a> -->
-    </header>
+  </header>
 
-  <!-- 🧾 HIRE FORM -->
+  <!-- 🧾 HIRE FORM (Only 1 working form with Formspree) -->
   <div class="hire-container">
     <h1>Hire M.Azam</h1>
-    <form action="https://formsubmit.co/thegreenguy48@gmail.com" method="POST">
+    <form action="https://formspree.io/f/mqalqbkr" method="POST">
+      <!-- Hidden optional -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://greenguy47.github.io/AZAM-Portfolio/thank-you.html">
+
+      <!-- Form Inputs -->
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="text" name="subject" placeholder="Subject" />

@@ -1,22 +1,22 @@
-/* Reset & Base */
+/* ✅ Reset & Base */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
-  color: #333;
+  color: #222;
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* ✅ Navbar */
 .navbar {
-  background-color: #f6f6f6;
+  background-color: #ffffff;
   padding: 15px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgb(0, 0, 0);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #002366;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 99;
@@ -26,10 +26,11 @@ body {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #002366;
 }
 
 .navbar nav a {
-  color: rgb(0, 0, 0);
+  color: #002366;
   margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
@@ -44,7 +45,7 @@ body {
   width: 0%;
   left: 0;
   bottom: -4px;
-  background-color: #000000;
+  background-color: #D4AF37;
   transition: 0.3s ease;
 }
 
@@ -53,7 +54,7 @@ body {
   width: 100%;
 }
 
-/* Blog Container */
+/* ✅ Blog Container */
 .blog-container {
   max-width: 900px;
   margin: 60px auto;
@@ -74,11 +75,11 @@ body {
   margin: 10px auto 0;
   width: 60px;
   height: 4px;
-  background-color: #ffc107;
+  background-color: #D4AF37;
   border-radius: 2px;
 }
 
-/* Blog Card */
+/* ✅ Blog Card */
 .blog-card {
   background: white;
   padding: 25px;
@@ -112,27 +113,27 @@ body {
 }
 
 .blog-card a:hover {
-  color: #ffc107;
+  color: #D4AF37;
   text-decoration: underline;
 }
 
-/* Footer */
+/* ✅ Footer */
 .footer {
   text-align: center;
   padding: 25px 15px;
-  background-color: #000000;
+  background-color: #002366;
   color: white;
   font-weight: 500;
   font-size: 16px;
 }
 
-/* Scroll to top button */
+/* ✅ Scroll to top button */
 #scrollTopBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #ac2424;
-  color: white;
+  background-color: #D4AF37;
+  color: black;
   border: none;
   padding: 10px 16px;
   border-radius: 50%;
@@ -144,12 +145,14 @@ body {
 }
 
 #scrollTopBtn:hover {
-  background-color: #ff0000;
+  background-color: #f0d78c;
 }
+
+/* ✅ Buttons */
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ffce00;
+  background-color: #D4AF37;
   color: #000;
   text-decoration: none;
   font-weight: bold;
@@ -161,4 +164,5 @@ body {
 .btn:hover {
   transform: scale(1.1);
   background-color: #ffffff;
+  color: #002366;
 }

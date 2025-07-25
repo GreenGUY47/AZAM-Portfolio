@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: #ffffff; /* updated to white for better theme match */
   color: #222;
   scroll-behavior: smooth;
 }
@@ -81,7 +81,7 @@ body {
 
 /* ✅ Blog Card */
 .blog-card {
-  background: white;
+  background: #ffffff;
   padding: 25px;
   margin-bottom: 35px;
   border-left: 6px solid #002366;
@@ -102,7 +102,7 @@ body {
 
 .blog-card p {
   line-height: 1.7;
-  color: #444;
+  color: #333;
 }
 
 .blog-card a {

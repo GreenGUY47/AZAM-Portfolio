@@ -11,8 +11,9 @@ body {
 /* 🔝 NAVBAR */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   background-color: #002366;
   padding: 15px 10%;
   color: white;
@@ -53,7 +54,7 @@ body {
   width: 100%;
 }
 
-/* Remove underline effect from button in navbar */
+/* Remove underline from nav button */
 .navbar .btn::after {
   display: none !important;
 }
@@ -108,7 +109,7 @@ form input:focus, form textarea:focus {
   box-shadow: 0 0 5px rgba(0,35,102,0.3);
 }
 
-/* 🟡 Submit Button with Animated Shine */
+/* 🔘 Submit Button with Shine Effect */
 .btn {
   position: relative;
   overflow: hidden;
@@ -119,10 +120,11 @@ form input:focus, form textarea:focus {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  width: 100%;
   font-size: 16px;
   transition: background-color 0.3s, transform 0.2s;
   z-index: 1;
+  width: auto;
+  display: inline-block;
 }
 
 .btn::after {
@@ -172,28 +174,4 @@ form input:focus, form textarea:focus {
 .footer-punch .socials a:hover {
   text-decoration: underline;
   color: #fffacd;
-}
-/* 🔹 Global Button Style */
-.btn {
-  position: relative;
-  overflow: hidden;
-  background-color: #002366;
-  color: white;
-  padding: 14px 20px;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  font-size: 16px;
-  transition: background-color 0.3s, transform 0.2s;
-  z-index: 1;
-  width: auto; /* ✅ Fix here */
-  display: inline-block; /* ✅ Ensures it's not full width */
-}
-.navbar {
-  display: flex;
-  justify-content: center; /* ✅ Center all content */
-  align-items: center;
-  gap: 40px; /* ✅ Space between logo and nav */
-  padding: 15px 10%;
 }
